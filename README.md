@@ -2,10 +2,10 @@
 
 ### Project Architecture
 
-Test application for bank account kata :
+Test application for bank account kata:
 
 - **Backend**: Built with Node.js and Express, utilizing TypeScript for added type safety.
-- **Frontend**: Crafted with React and TypeScript, and styled with MUI for a seamless user experience.
+- **Frontend**: Crafted with React and TypeScript, styled with MUI for a seamless user experience.
 - **Database**: Leveraging MongoDB Atlas and Mongoose for efficient data management.
 
 ---
@@ -27,11 +27,13 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-### Backend Development
+### Starting Project Using Docker
 
-To get started with the backend:
+The project is containerized, making it easy to start:
 
-1. **Build the Project**:
+1. **Replace DB URL**:
+   - In the `docker-compose.yml` file, change `YOUR_MONGO_URI` to your MongoDB URI.
+
+2. **Run the following command for Docker**:
    ```bash
-   npm run build
-   ```
+   docker-compose up --build
